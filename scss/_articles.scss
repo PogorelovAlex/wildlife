@@ -1,0 +1,158 @@
+@import "_vars.scss";
+@import "_fonts.scss";
+@import "_mixins.scss";
+
+.articles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #cccccc;
+
+  &__title {
+    font-family: "Open Sans";
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 7.2rem;
+    letter-spacing: 0em;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    margin-top: 12.2rem;
+  }
+
+  &__subtitle {
+    font-family: "Open Sans";
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.6rem;
+    text-align: center;
+    letter-spacing: 0.05rem;
+    color: $color__font-grey;
+    margin-top: 2.1rem;
+  }
+
+  &__slider {
+    width: 121.4rem;
+    margin-top: 11.7rem;
+    .slider-button {
+      margin-top: 15rem;
+    }
+    .slider__cards {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+    }
+    .slider-button {
+      @include slider-button();
+    }
+    .slider-card {
+      .card-img {
+        position: absolute;
+        z-index: 1;
+      }
+
+      &__content-deer,
+      &__content-squirrel,
+      &__content-bird {
+        position: relative;
+        z-index: 2;
+        top: -11.5rem;
+      }
+      &__title {
+        font-family: "Open Sans";
+        font-size: 2.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 3.6rem;
+        text-align: center;
+        color: $color__ligth;
+      }
+      &__subtitle {
+        font-family: "Open Sans";
+        font-size: 1.7rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $color__ligth;
+        margin-top: 2rem;
+      }
+      h4 {
+        margin: 0;
+        padding: 0;
+      }
+      h5 {
+        margin-top: 1rem;
+        padding: 0;
+      }
+    }
+  }
+
+  &__notified {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 23.7rem;
+    &-form {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      width: 66.1rem;
+      height: 6rem;
+      margin-top: 5.8rem;
+      input[type="text"] {
+        padding-left: 1.5rem;
+      }
+    }
+    &-title {
+      font-family: "Open Sans";
+      font-size: 2.7rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 4.1rem;
+      color: $color__font-dark;
+      margin-top: 14rem;
+      letter-spacing: 0.06rem;
+    }
+
+    &-email {
+      width: 54rem;
+      height: 5.6rem;
+
+      background-color: #cccccc;
+      border: solid 0.1rem $color__font-grey;
+      outline: none;
+
+      font-family: "Roboto";
+      font-size: 2.3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.7rem;
+      color: $color__font-grey;
+    }
+    @include placeholder_clear();
+    
+    &-submit {
+      width: 12rem;
+      height: 6rem;
+      background-color: $color__orange-main;
+      border: none;
+      outline: none;
+
+      font-family: "Roboto";
+      font-size: 2.3rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.7rem;
+      color: $color__ligth;
+    }
+
+    &-submit:hover {
+      cursor: pointer;
+      background-color: $color__orange-ligth;
+    }
+  }
+}

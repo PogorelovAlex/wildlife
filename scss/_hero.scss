@@ -1,0 +1,188 @@
+
+
+@import"_vars.scss";
+@import"_fonts.scss";
+
+:root {
+  font-size: 10px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  width: 144rem;
+  min-height: 100%;
+  font-family: "Roboto", Helvetica, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.4rem;
+}
+
+
+
+.hero {
+  
+  background-image: url("../assets/Hero.png");
+  width: 100%;
+  height: 78rem;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 120rem;
+    flex: 1;
+    justify-content: space-between;
+  }
+
+  .header {
+    display: flex;
+    flex-direction: row;
+    width: 120rem;
+    height: 6rem;
+    margin-top: 2rem;
+    justify-content: space-between;
+
+    &__logo {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      width: 24rem;
+
+      &-img:hover,
+      &-title:hover {
+        opacity: 0.7;
+      }
+      &-img:focus,
+      &-title:focus {
+        opacity: 0.5;
+      }
+      &-title {
+        font-family: "Roboto";
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 6rem;
+        color: $color__ligth;
+        text-transform: uppercase;
+        margin-left: 1.55rem;
+        text-decoration: none;
+      }
+    }
+
+    &__nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      width: 48rem;
+
+      &-item {
+        .link {
+          font-family: "Open Sans";
+          font-size: 2.5rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 6rem;
+          color: $color__ligth;
+          text-decoration: none;
+          outline: none;
+
+          &__button {
+            width: 12rem;
+            height: 5rem;
+            border: 2px solid $color__orange-main;
+            box-sizing: border-box;
+            border-radius: 0.5rem;
+            background: rgba(255, 255, 255, 0.01);
+
+            font-family: "Roboto";
+            font-size: 2.3rem;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 2.7rem;
+            color: $color__ligth;
+          }
+          &__button:hover,
+          &__button:focus {
+            opacity: 0.7;
+            cursor: pointer;
+          }
+        }
+        .link:hover {
+          opacity: 0.7;
+          cursor: pointer;
+        }
+
+        .link:active,
+        .link:focus {
+          opacity: 0.4;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+&__survival {
+  display: flex;
+  flex-direction: column;
+  width: 27.4rem;
+ 
+  margin-top: 8rem;
+  
+  &-title {
+    
+    font-family: "Open Sans";
+    font-size: 4.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 7.2rem;
+    letter-spacing: 0.32rem;
+    color:$color__orange-main
+
+  }
+  &-content {
+ 
+    font-family: 'Open Sans';
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.7rem;
+    letter-spacing: 0.048rem;
+    text-align: center;
+    color:$color__ligth;
+    margin-top: 1.2rem;
+
+  }
+
+  &-donate {
+    width: 16rem;
+    height: 6rem;
+    background-color:$color__orange-main;
+    border: none;
+    border-radius: 0.5rem;
+
+    
+    font-family: 'Roboto';
+    font-size: 2.3rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2.7rem;
+    color: $color__ligth;
+    margin-top:4.9rem ;
+
+  }
+  &-donate:hover{
+    background-color: $color__orange-ligth;
+    border: none;
+    cursor: pointer;
+  }
+  &-donate:focus{
+    background-color: $color__orange-dark;
+    border: none;
+    outline: none;
+  }
+}
+
+
+}

@@ -4,4 +4,4 @@
 
 https://pogorelovalex.github.io/wildlife/
 
-![Иллюстрация к проекту](https://github.com/PogorelovAlex/wildlive/blob/main/Gitpicture.jpg)
+![Иллюстрация к проекту](https://github.com/PogorelovAlex/wildlive/blob/main/Wildlife.png)

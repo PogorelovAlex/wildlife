@@ -6,7 +6,7 @@
 
 ![Иллюстрация к проекту](https://github.com/PogorelovAlex/wildlife/blob/main/Wildlife.png)
 
-[Готовый Wildlive]https://pogorelovalex.github.io/wildlife/
+[Готовый Wildlive](https://pogorelovalex.github.io/wildlife/)
 
 Сверстать страницу согласно макету:
 

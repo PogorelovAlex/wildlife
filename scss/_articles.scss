@@ -8,6 +8,11 @@
   align-items: center;
   background: #cccccc;
 
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 120rem;
+  }
   &__title {
     font-family: "Open Sans";
     font-size: 4.8rem;
@@ -33,52 +38,34 @@
   }
 
   &__slider {
-    width: 121.4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     margin-top: 11.7rem;
     .slider-button {
-      margin-top: 15rem;
+      margin-top: 14.7rem;
     }
+
     .slider__cards {
       display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
+      width: 128rem;
+      padding-left: 2.2rem;
+      overflow: hidden;
     }
     .slider-button {
       @include slider-button();
     }
     .slider-card {
-      .card-img {
-        position: absolute;
-        z-index: 1;
-      }
-
-      &__content-deer,
-      &__content-squirrel,
-      &__content-bird {
-        position: relative;
-        z-index: 2;
-        top: -11.5rem;
-      }
-      &__title {
-        font-family: "Open Sans";
-        font-size: 2.2rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 3.6rem;
-        text-align: center;
-        color: $color__ligth;
-      }
-      &__subtitle {
-        font-family: "Open Sans";
-        font-size: 1.7rem;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 2.7rem;
-        text-align: center;
-        color: $color__ligth;
-        margin-top: 2rem;
-      }
+      width: 36rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      transition-property: transform;
+      transition-duration: 400ms;
+      padding: 0 3rem;
+      position: relative;
+      z-index: 1;
       h4 {
         margin: 0;
         padding: 0;
@@ -88,13 +75,40 @@
         padding: 0;
       }
     }
+
+    .card__title {
+    position: relative;
+    z-index: 2;
+    top:-11rem;
+
+    font-family: "Open Sans";
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.6rem;
+    color: $color__ligth;
+    }
+
+    .card__subtitle {
+      position: relative;
+      z-index: 2;
+      top:-11rem;
+
+      font-family: "Open Sans";
+      font-size: 1.7rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $color__ligth; 
+    }
   }
 
   &__notified {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 23.7rem;
+    margin-bottom: 24rem;
     &-form {
       display: flex;
       flex-direction: row;
@@ -134,7 +148,7 @@
       color: $color__font-grey;
     }
     @include placeholder_clear();
-    
+
     &-submit {
       width: 12rem;
       height: 6rem;
